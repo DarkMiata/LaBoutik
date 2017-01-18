@@ -1,0 +1,28 @@
+
+* {
+    background-color: #eee;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#container {
+  padding: 5px 5px 5px 5px;
+  margin: 10px 10px 10px 10px;
+  background-color: #eee;   
+}
+
+.colSamLg1 {
+  width: 50px;
+}
+
+.colSamLg2 {
+  width: 100px;
+}
+
+.colSamLg3 {
+  width: 150px;
+}
+
+.colSamLg4 {
+  width: 200px;
+}
