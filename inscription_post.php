@@ -53,6 +53,5 @@ $requete =
   . " ,'".$email.    "'"
   . " ,'".$mdp.      "');";
 
-
 $etat = $Bdd->query($requete);
   

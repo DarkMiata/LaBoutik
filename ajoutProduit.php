@@ -18,7 +18,7 @@
           <div class="form-group">
             <label class="col-md-4 control-label" for="nomproduit">Nom</label>  
             <div class="col-md-4">
-              <input id="nomproduit" name="nomproduit" type="text" placeholder="" class="form-control input-md" required="">
+              <input id="nomProduit" name="nomproduit" type="text" placeholder="" class="form-control input-md" required="">
 
             </div>
           </div>

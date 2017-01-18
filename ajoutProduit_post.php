@@ -1,8 +1,13 @@
 <?php
 
-$a = $_POST[''];
+/*
+ * inputs:
+ *  nomProduit
+ *  descriptRapide
+ *  description
+ *  stock
+ *  prix
+ */
 
-$bdd = new PDO("mysql:host=localhost;");
-
-    ?>
-
+$nomProduit = $_POST['nomProduit'];
+$descriptRapide = $_POST['descriptrapide'];
