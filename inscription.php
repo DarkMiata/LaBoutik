@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 
+<!-- a ajouter:
+  * controle du mdp et sa confirmation
+
+
 <head> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">-->
 
-  <!-- Website CSS style -->
-  <!--  <link rel="stylesheet" type="text/css" href="assets/css/main.css">-->
+<!-- Website CSS style -->
+<!--  <link rel="stylesheet" type="text/css" href="assets/css/main.css">-->
 
-  <!-- Website Font style -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- Website Font style -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-  <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
-  <?php include('header.inc.php'); ?>
-  <link rel="stylesheet" href="css/style_register.css" type="text/css">
+<?php include('header.inc.php'); ?>
+<link rel="stylesheet" href="css/style_register.css" type="text/css">
 
-  <title>La Boutik - connexion au compte</title>
+<title>La Boutik - connexion au compte</title>
 
 </head>
 <body>
@@ -30,35 +34,50 @@
         </div>
       </div> 
       <div class="main-login main-center">
-        <form class="form-horizontal" method="post" action="#">
 
-          
+        <!-- Formulaire -->
+
+        <form class="form-horizontal" method="post" action="inscription_post.php">
+
+
           <!-- Nom -->
-          
+
           <div class="form-group">
             <label for="name" class="cols-sm-2 control-label">Votre nom</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"  placeholder="Entrez votre nom"/>
+                <input type="text" class="form-control" name="nom" id="name"  placeholder="Entrez votre nom"/>
               </div>
             </div>
           </div>
 
           <!-- Prénom -->
-           
+
           <div class="form-group">
             <label for="name" class="cols-sm-2 control-label">Votre prénom</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"  placeholder="Entrez votre prénom"/>
+                <input type="text" class="form-control" name="prenom" id="name"  placeholder="Entrez votre prénom"/>
               </div>
             </div>
           </div>
 
-         <!-- Email -->    
-         
+          <!-- Adresse -->
+
+          <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Votre adresse</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-home fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="adresse" id="name"  placeholder="Entrez votre prénom"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->    
+
           <div class="form-group">
             <label for="email" class="cols-sm-2 control-label">Votre Email</label>
             <div class="cols-sm-10">
@@ -69,8 +88,8 @@
             </div>
           </div>
 
-  <!-- mot de passe -->       
-         
+          <!-- mot de passe -->       
+
           <div class="form-group">
             <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
             <div class="cols-sm-10">
@@ -81,8 +100,8 @@
             </div>
           </div>
 
- <!-- mdp confirmation -->        
-         
+          <!-- mdp confirmation -->        
+
           <div class="form-group">
             <label for="confirm" class="cols-sm-2 control-label">Mot de passe - confirmation</label>
             <div class="cols-sm-10">
@@ -93,13 +112,13 @@
             </div>
           </div>
 
- <!-- bouton enregistrement -->
- 
+          <!-- bouton enregistrement -->
+
           <div class="form-group ">
-            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Enregistrement</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Enregistrement</button>
           </div>
           <div class="login-register">
-            <a href="inscription_post.php">Connextion</a>
+            <a href="inscription_post.php">Connexion</a>
           </div>
         </form>
       </div>
