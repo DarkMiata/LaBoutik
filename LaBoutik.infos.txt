@@ -1,0 +1,19 @@
+
+Formulaire des produits:
+ *  nomProduit
+ *  descriptRapide
+ *  description
+ *  stock
+ *  prix
+ *	ref
+ *	categorie
+
+
+ Catégories de produits:
+	1 - Machines de musculation
+	2 - Poids libres
+	3 - Boissons de l'effort
+	4 - Compléments alimentaires
+
+
+front login récupéré sur http://bootsnipp.com/snippets/featured/register-page

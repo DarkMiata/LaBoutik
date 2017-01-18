@@ -6,22 +6,16 @@
 
 <head> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">-->
+  <!--  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">-->
 
-<!-- Website CSS style -->
-<!--  <link rel="stylesheet" type="text/css" href="assets/css/main.css">-->
+  <!-- Website CSS style -->
+  <!--  <link rel="stylesheet" type="text/css" href="assets/css/main.css">-->
 
-<!-- Website Font style -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- front login récupéré sur http://bootsnipp.com/snippets/featured/register-page -->
 
-<!-- Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <?php include('header.inc.php'); ?>
 
-<?php include('header.inc.php'); ?>
-<link rel="stylesheet" href="css/style_register.css" type="text/css">
-
-<title>La Boutik - connexion au compte</title>
+  <title>La Boutik - connexion au compte</title>
 
 </head>
 <body>
@@ -118,7 +112,9 @@
             <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Enregistrement</button>
           </div>
           <div class="login-register">
-            <a href="inscription_post.php">Connexion</a>
+            <a href="connexion.php">Connexion</a>
+          </div>
+          <div class="message_erreur">
           </div>
         </form>
       </div>
