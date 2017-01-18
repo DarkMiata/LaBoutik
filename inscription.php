@@ -15,6 +15,7 @@
   <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
   <?php include('header.inc.php'); ?>
+  <link rel="stylesheet" href="css/style_register.css" type="text/css">
 
   <title>La Boutik - connexion au compte</title>
 
@@ -24,68 +25,81 @@
     <div class="row main">
       <div class="panel-heading">
         <div class="panel-title text-center">
-          <h1 class="title">Company Name</h1>
+          <h1 class="title">La Boutik</h1>
           <hr />
         </div>
       </div> 
       <div class="main-login main-center">
         <form class="form-horizontal" method="post" action="#">
 
+          
+          <!-- Nom -->
+          
           <div class="form-group">
-            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+            <label for="name" class="cols-sm-2 control-label">Votre nom</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                <input type="text" class="form-control" name="name" id="name"  placeholder="Entrez votre nom"/>
               </div>
             </div>
           </div>
 
+          <!-- Prénom -->
+           
           <div class="form-group">
-            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+            <label for="name" class="cols-sm-2 control-label">Votre prénom</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name"  placeholder="Entrez votre prénom"/>
+              </div>
+            </div>
+          </div>
+
+         <!-- Email -->    
+         
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">Votre Email</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                <input type="text" class="form-control" name="email" id="email"  placeholder="Entrez votre Email"/>
               </div>
             </div>
           </div>
 
+  <!-- mot de passe -->       
+         
           <div class="form-group">
-            <label for="username" class="cols-sm-2 control-label">Username</label>
-            <div class="cols-sm-10">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="password" class="cols-sm-2 control-label">Password</label>
+            <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                <input type="password" class="form-control" name="password" id="password"  placeholder="Entrez votre mot de passe"/>
               </div>
             </div>
           </div>
 
+ <!-- mdp confirmation -->        
+         
           <div class="form-group">
-            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+            <label for="confirm" class="cols-sm-2 control-label">Mot de passe - confirmation</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+                <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirmez votre mot de passe"/>
               </div>
             </div>
           </div>
 
+ <!-- bouton enregistrement -->
+ 
           <div class="form-group ">
-            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Enregistrement</button>
           </div>
           <div class="login-register">
-            <a href="index.php">Login</a>
+            <a href="inscription_post.php">Connextion</a>
           </div>
         </form>
       </div>
