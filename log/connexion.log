@@ -1,0 +1,29 @@
+
+tentative de nouvelle connexion:
+  email: 1@1.com
+  mdp:   1234
+
+tentative de nouvelle connexion:
+19/01/2017 - 04:21:44pm
+  email: 1@1.com
+  mdp:   1234
+
+tentative de nouvelle connexion:
+  19/01/2017 - 04:22:28pm
+  email: 1@1.com
+  mdp:   1234
+
+tentative de nouvelle connexion:
+  19/01/2017 - 04:51:07pm
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+
+tentative de nouvelle connexion:
+  19/01/2017 - 04:52:12pm
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234

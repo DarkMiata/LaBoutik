@@ -16,11 +16,20 @@
                 <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 2</a></li>
                 <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 3</a></li>
                 <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 4</a></li>
-                <li class="upper-links">Bonjour 'n'</li>
-                <li class="upper-links">
-                  <a href="#" class="btn btn-xs btn-default">
+                
+                <!-- id "info-navbar-1" et 2 permet de cibler en JQ
+                        "bonjour 'n' et bouton deconnexion -->
+                
+                <li class="upper-links" id="info-navbar-1">Bonjour 'n'</li>
+                <li class="upper-links" id="info-navbar-2">
+                  <a href="inscription.php" class="btn btn-xs btn-default">
                     <span class="glyphicon glyphicon-log-out">
-                    </span>deconnexion</a>
+                    </span> inscription</a>
+                </li>
+                <li class="upper-links" id="info-navbar-2">
+                  <a href="connexion.php" class="btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-log-out">
+                    </span> connexion</a>
                 </li>
             </ul>
         </div>
