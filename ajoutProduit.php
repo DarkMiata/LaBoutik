@@ -9,70 +9,84 @@
   <body>
     <div id="container">
       <form class="form-horizontal" method="post" action="ajoutProduit_post.php">
-        <fieldset>
+        <fieldset>  
 
           <!-- Form Name -->
           <legend>Ajout d'un produit à la base de donnée</legend>
 
-          <!-- Text input-->
+          <!-- nomProduit -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="nomproduit">Nom</label>  
+            <label class="col-md-4 control-label" for="textinput">Nom</label>  
             <div class="col-md-4">
-              <input id="nomProduit" name="nomproduit" type="text" placeholder="" class="form-control input-md" required="">
+              <input id="nomProduit" name="nomProduit" type="text" placeholder=""
+                     class="form-control input-md" required="">
 
             </div>
           </div>
 
-          <!-- Text input-->
+          <!-- descriptRapide -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="descriptRapide">Description rapide</label>  
+            <label class="col-md-4 control-label" for="textinput">Description rapide</label>  
             <div class="col-md-4">
-              <input id="descriptRapide" name="descriptRapide" type="text" placeholder="" class="form-control input-md">
+              <input id="descriptRapide" name="descriptRapide" type="text" placeholder=""
+                     class="form-control input-md">
 
             </div>
           </div>
 
-          <!-- Text input-->
+          <!-- description -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="description">Description complète</label>  
+            <label class="col-md-4 control-label" for="textinput">Description complète</label>  
             <div class="col-md-6">
-              <input id="description" name="description" type="text" placeholder="" class="form-control input-md">
+              <input id="description" name="description" type="text" placeholder=""
+                     class="form-control input-md">
 
             </div>
           </div>
 
-          <!-- Text input-->
+          <!-- stock -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="stock">Nbre en stock</label>  
+            <label class="col-md-4 control-label" for="textinput">Nbre en stock</label>  
             <div class="col-md-2 col-xs-3">
-              <input id="stock" name="stock" type="text" placeholder="" class="form-control input-md" required="">
+              <input id="stock" name="stock" type="number" placeholder=""
+                     class="form-control input-md" required="">
 
             </div>
           </div>
 
-          <!-- Text input-->
+          <!-- prix -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="prix">Prix</label>  
+            <label class="col-md-4 control-label" for="textinput">Prix</label>  
             <div class="col-md-2 col-xs-3">
-              <input id="prix" name="prix" type="text" placeholder="" class="form-control input-md" required="">
+              <input id="prix" name="prix" type="number" step="any" placeholder=""
+                     class="form-control input-md" required="">
 
             </div>
           </div>
-
-          <!-- Select Basic -->
+          
+          <!-- cat -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="cat">Catégorie</label>
+            <label class="col-md-4 control-label" for="selectbasic">Catégorie</label>
             <div class="col-md-4">
-              <select id="cat" name="cat" class="form-control">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-                <option value="4">Option 4</option>
-                <option value="5">Option 5</option>
+              <select id="cat" name="cat" type="number" class="form-control">
+                <option value="1">Machines de musculation</option>
+                <option value="2">Poids libres</option>
+                <option value="3">Boissons de l'effort</option>
+                <option value="4">Compléments alimentaires</option>
               </select>
             </div>
           </div>
 
+          <!-- ref -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Ref.</label>  
+            <div class="col-md-2 col-xs-3">
+              <input id="ref" name="ref" type="text" placeholder=""
+                     class="form-control input-md" required="">
+
+            </div>
+          </div>          
+          
           <!-- Button -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="singlebutton"></label>
@@ -82,8 +96,8 @@
             </div>
           </div>
 
-        </fieldset>
-      </form>
+        
+      
     </div>
   </body>
 

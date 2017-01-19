@@ -1,0 +1,7 @@
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('98711' ,'9817' ,'981' , 54 , 654 ,'6874' , 1 );
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('87' ,'1654' ,'654' , 54 , 54.3 ,'6546548' , 1 );
+etat: Array
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('Caseine Micellaire Harder' ,'Proteines natives' ,'Elle constitue une veritable avancee dans le monde de la proteine. l accent a ete mis avant tout sur la qualite des matieres premieres et des ingredients.' , 200 , 39.9 ,'651478715465' , 4 );
+etat: Array
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('5' ,'6' ,'48' , 5 , 4 ,'654654' , 1 );
+etat: Array

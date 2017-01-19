@@ -55,4 +55,3 @@ $requete =
 $etat = $Bdd->query($requete);
 $_SESSION['erreur_login'] = "";
 
-}
