@@ -9,7 +9,7 @@ inputs:
 <!-- front login récupéré sur http://bootsnipp.com/snippets/featured/register-page -->
 
 <head>
-  <?php include('header.inc.php'); ?>
+  <?php include('inc/header.inc.php'); ?>
   <title>La Boutik - connexion au compte</title>
 </head>
 <body>

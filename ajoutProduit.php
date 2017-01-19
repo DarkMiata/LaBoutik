@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <?php include('header.inc.php'); ?>
+    <?php include('inc/header.inc.php'); ?>
     <title>La Boutik - ajout de produits</title>
   </head>
 

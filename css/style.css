@@ -1,4 +1,4 @@
-
+/*
 * {
     background-color: #eee;
     margin: 0px 0px 0px 0px;
@@ -10,6 +10,7 @@
   margin: 10px 10px 10px 10px;
   background-color: #eee;   
 }
+*/
 
 .colSamLg1 {
   width: 50px;
@@ -25,4 +26,11 @@
 
 .colSamLg4 {
   width: 200px;
+}
+
+#image_banniere {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto; 
+      display: block;
 }
