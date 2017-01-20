@@ -9,3 +9,5 @@ requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, ca
 etat: Array
 requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('Barre olympique' ,'Barre pour disques' ,'Barre olympique de 20 Kgs - norme de competition homologue.' , 12 , 79.9 ,'89871654178' , 2 );
 etat: Array
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('fkdgjdhgkldjhg' ,'ytuyt' ,'uytuyt' , 50 , 12.5 ,'68716871681' , 3 );
+etat: Array

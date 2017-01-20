@@ -25,10 +25,11 @@
        
     <!-- CSS personnel -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
+    
+    <!-- CSS Produits -->
+    <link rel="stylesheet" href="css/produits.css" type="text/css">
 </head>
+ 
 <?php include('inc/menu.inc.php'); ?>
-
 <img id="image_banniere" src="images\ban1.jpg" alt="banniere">
-
 </html>
