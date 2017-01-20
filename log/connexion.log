@@ -27,3 +27,79 @@ tentative de nouvelle connexion:
   demande à la base si compte existant
   compte existant OK
   récupération du mdp dans la BDD: 1234
+
+tentative de nouvelle connexion:
+  20/01/2017 - 09:46:35am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+
+tentative de nouvelle connexion:
+  20/01/2017 - 09:48:58am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+
+tentative de nouvelle connexion:
+  20/01/2017 - 09:50:21am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+
+tentative de nouvelle connexion:
+  20/01/2017 - 10:08:53am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+  comparaison mdp: 1234 - 1234
+  mdp OK
+
+tentative de nouvelle connexion:
+  20/01/2017 - 11:05:01am
+  email: 2@2.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+
+tentative de nouvelle connexion:
+  20/01/2017 - 11:05:43am
+  email: 2@2.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+  récupération id client: 4
+  comparaison mdp: 1234 - 1234
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  20/01/2017 - 11:22:10am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+  récupération id client: 1
+  comparaison mdp: 1234 - 1234
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  20/01/2017 - 11:24:52am
+  email: 1@1.com
+  mdp:   1234
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 1234
+  récupération id client: 1
+  comparaison mdp: 1234 - 1234
+  mdp OK

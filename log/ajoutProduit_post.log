@@ -5,3 +5,7 @@ requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, ca
 etat: Array
 requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('5' ,'6' ,'48' , 5 , 4 ,'654654' , 1 );
 etat: Array
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('Whey' ,'Poudre proteines' ,'Poudre de proteines laitiere a 90 pour cent.' , 45 , 33.9 ,'678175416578' , 4 );
+etat: Array
+requete:  INSERT INTO produit (nom, descript_rap, descript, stock, prix, ref, cat_id) VALUES ('Barre olympique' ,'Barre pour disques' ,'Barre olympique de 20 Kgs - norme de competition homologue.' , 12 , 79.9 ,'89871654178' , 2 );
+etat: Array
