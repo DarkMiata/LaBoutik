@@ -77,28 +77,38 @@ function msg_bienvenu_navbar() {
     if (isset($_SESSION['id_client'])) {
         $idClient = $_SESSION['id_client'];
 
-        echo "Bonjour client iD:".$idClient;
+        $Bdd = connexionBdd();
 
-        echo '<li class="upper-links" id="info-navbar">'
-            .'  <a href="deconnexion.php"'
-            .'  class="btn btn-xs btn-default">'
-            .'      <span class="glyphicon glyphicon-log-out">
-                    </span> deconnexion</a>'
-            .'</li>';
+        $sql = $Bdd->query(
+            " SELECT prenom"
+          . " FROM client"
+          . " WHERE id='".$idClient."';"
+          )->fetch();
+
+        echo "Bonjour ".$sql['prenom'];
+
+    ?>
+        <li class="upper-links" id="info-navbar">
+            <a href="deconnexion.php" class="btn btn-xs btn-default">
+            <span class="glyphicon glyphicon-log-out"></span> deconnexion</a>
+        </li>
+    <?php
     } 
     // session client non ouverte, alors affichage bouton 'inscription',
     // 'connexion'
     else {
-        echo '<li class="upper-links" id="info-navbar">'
-            .'  <a href="inscription.php" class="btn btn-xs btn-default">'
-            .'      <span class="glyphicon glyphicon-log-out">
-                    </span> inscription</a>'
-            .'</li>'
-            .'<li class="upper-links" id="info-navbar">'
-            .'  <a href="connexion.php" class="btn btn-xs btn-default">'
-            .'      <span class="glyphicon glyphicon-log-out">'
-            .'      </span> connexion</a>'
-            .'</li>';
+        ?>
+            <li class="upper-links" id="info-navbar">
+                <a href="inscription.php" class="btn btn-xs btn-default">
+                <span class="glyphicon glyphicon-log-out">
+                </span> inscription</a>
+            </li>
+            <li class="upper-links" id="info-navbar">
+                <a href="connexion.php" class="btn btn-xs btn-default">
+                <span class="glyphicon glyphicon-log-out">
+                </span> connexion</a>
+            </li>
+        <?php
     }
 }
 // ============================== 

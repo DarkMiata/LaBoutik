@@ -281,3 +281,25 @@ tentative de nouvelle connexion:
   compte existant OK
   récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
   mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 05:36:08pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 09:36:06pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK

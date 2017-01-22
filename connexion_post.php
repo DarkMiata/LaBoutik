@@ -49,12 +49,7 @@ $Bdd = new PDO("mysql:host=localhost;dbname=boutik;charset=utf8", "root", "");
 
 // controle du mot de passe
 
-$sql = $Bdd->query(
-    "SELECT COUNT(*)"
-  . " FROM client"
-  . " WHERE email='"
-  . $email."';"
-  )->fetch();
+// ============================== 
 
 $countEmail = $sql['COUNT(*)'];
 

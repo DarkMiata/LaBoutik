@@ -14,26 +14,10 @@
     <div class="container">
         <div class="row row1">
             <ul class="largenav pull-right">
-<!--
-                <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 1</a></li>
-                <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 2</a></li>
-                <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 3</a></li>
-                <li class="upper-links"><a class="links" href="https://github.com/chawlaaditya8/snippets">Link 4</a></li>
--->               
-                <!-- id "info-navbar-1" et 2 permet de cibler en JQ
-                        "bonjour 'n' et bouton deconnexion -->
+
+                <!-- "bonjour 'n' et bouton deconnexion -->
                 
                 <li class="upper-links" id="info-navbar-client"><?php msg_bienvenu_navbar(); ?></li>
-                <!-- <li class="upper-links" id="info-navbar-2">
-                  <a href="inscription.php" class="btn btn-xs btn-default">
-                    <span class="glyphicon glyphicon-log-out">
-                    </span> inscription</a>
-                </li>
-                <li class="upper-links" id="info-navbar-2">
-                  <a href="connexion.php" class="btn btn-xs btn-default">
-                    <span class="glyphicon glyphicon-log-out">
-                    </span> connexion</a>
-                </li> -->
             </ul>
         </div>
         <div class="row row2">
