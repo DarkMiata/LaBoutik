@@ -12,7 +12,7 @@
 // !!!!!!!! include temporaire pour test CSS - à retirer !!!
 //include('inc/header.inc.php');
 
-$conn = new PDO("mysql:host=localhost;dbname=boutik", "root", "");
+$Bdd = new PDO("mysql:host=localhost;dbname=boutik", "root", "");
 
 //SELECT nom, descript, descript_rap, prix, stock
 //FROM produit
@@ -20,11 +20,12 @@ $conn = new PDO("mysql:host=localhost;dbname=boutik", "root", "");
 
 // Selection des 3 premiers produits
 $sql =
-    " SELECT nom, descript, descript_rap, prix, stock"
+    " SELECT id, nom, descript, descript_rap, prix, stock"
   . " FROM produit"
   . " LIMIT 0,3";
 
-foreach ($conn->query($sql) as $row) {
+foreach ($Bdd->query($sql) as $row) {
+  $id               = $row['id'];
   $nomProd          = $row['nom'];
   $descriptProd     = $row['descript'];
   $descriptRapProd  = $row['descript_rap'];
@@ -43,13 +44,12 @@ foreach ($conn->query($sql) as $row) {
   if (intval($stockProd) > 0) {
     echo "<p class='stock_enStock'>En stock (reste ".$stockProd.")</p></div>";
     // bouton ajouter au panier
-    echo '<a href="#" '
-    . 'class="btn btn-xs btn-success">'
-    . '<span class="glyphicon glyphicon-shopping-cart">'
-    . '</span> ajouter au panier</a>'
+    echo '<a href="commande.php?ajouter&id='.$id.'"'
+        .'class="btn btn-xs btn-success">'
+        .'<span class="glyphicon glyphicon-shopping-cart">'
+        .'</span> ajouter au panier</a>'
     ;
-  } 
-  else {
+  } else {
     echo "<p class='stock_epuise'>Stock épuisé</p></div>";
   }
 

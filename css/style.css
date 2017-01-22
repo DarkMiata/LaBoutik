@@ -30,9 +30,9 @@
 
 #image_banniere {
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto; 
-      display: block;
+  margin-left: auto; margin-right: auto; display: block;
 }
 
-
+.message_erreur {
+  font-size: 1.2em; font-weight: bold; color: #c00;
+}

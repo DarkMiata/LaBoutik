@@ -4,8 +4,7 @@ CSS de la page d'affichage produits
 
 
 .produit {
-  margin-left: 20px;
-  width: 300px;
+  margin-left: 20px; width: 300px;
 }
 
 .nomProd {
@@ -14,7 +13,6 @@ CSS de la page d'affichage produits
 
 .descriptRapProd {
   font-size: 1.3em; 
-  color: 
 }
 
 .descriptProd {
@@ -22,13 +20,11 @@ CSS de la page d'affichage produits
 }
 
 .prixProd {
-  color: red;
-  font-size: 1.5em;
+  color: red; font-size: 1.5em;
 }
 
 .stockProd {
-  font-size: 1.2em;
-  color: #aaa;
+  font-size: 1.2em; color: #aaa;
 }
 
 .stock_epuise {

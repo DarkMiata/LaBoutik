@@ -1,4 +1,6 @@
 <?php
+include 'log/ChromePhp.php';
+include 'include_php.php';
 
 /*  inscription du nouveau membre dans la base de donnée
  * 
@@ -6,6 +8,11 @@
  *  filter_input sur les _POST
 */
 
+/**
+ * [phpAlert description]
+ * @param  [type] $msg [description]
+ * @return [type]      [description]
+ */
 function phpAlert($msg) {
   echo '<script type="text/javascript">alert("' . $msg . '")</script>';
 }
@@ -18,40 +25,40 @@ $email    = $_POST['email'];
 $mdp      = $_POST['password'];
 $confirm  = $_POST['confirm'];
 
-/* Vérification temporaire des deux mots de passe */
+/* Vérification des deux mots de passe */
 if ($mdp <> $confirm) {
-  $_SESSION['erreur_login']="Les deux mots de passe ne sont pas identiques";
-  header('Location: inscription.php');
+  header('Location: inscription.php?mes=mdpNonConfirme');
   exit();
 }
 
-$Bdd = new PDO("mysql:host=localhost;dbname=boutik", "root", "");
+$Bdd = connexionBdd();
 
 // Email du nouveau inscript déjà présent dans la base de données ?
-$reponseBdd = $Bdd->query(
-  " SELECT COUNT(*)"
-  . " FROM `client`"
-  . " WHERE email='"
-  . $email."';"
-  )->fetch();
+$req = 
+   " SELECT COUNT(*)"
+  ." FROM client"
+  ." WHERE email='"
+  .$email."';";
 
-if ($reponseBdd[0] <> '0') {
-  $_SESSION['erreur_login']="Le compte ".$email." existe déjà";
-  header('Location: inscription.php');
+$sql = $Bdd->query($req)->fetch();
+
+var_dump($sql);
+
+if ($sql[0] <> '0') {
+  header('Location: inscription.php?mes=compteDejaExistant');
   exit();
 }
 
 // Inscription prête à être inscrite à la BDD
-$requete =
-" INSERT INTO client"
-. " (nom, prenom, adresse, email, mdp)"
-. " VALUES"
-. " ('".$nom.      "'"
-. " ,'".$prenom.   "'"
-. " ,'".$adresse.  "'"
-. " ,'".$email.    "'"
-. " ,'".$mdp.      "');";
+$req =
+ " INSERT INTO client"
+." (nom, prenom, adresse, email, mdp)"
+." VALUES"
+." ('".$nom.      "'"
+." ,'".$prenom.   "'"
+." ,'".$adresse.  "'"
+." ,'".$email.    "'"
+." ,'".$mdp.      "');";
 
-$etat = $Bdd->query($requete);
-$_SESSION['erreur_login'] = "";
+$sql = $Bdd->query($req);
 

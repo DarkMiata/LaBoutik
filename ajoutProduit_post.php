@@ -2,13 +2,13 @@
 
 /*
  * inputs:
- *		nomProduit
- *		descriptRapide
- *		description
- *		stock
- *		prix
- *		ref
- *		categorie
+ *      nomProduit
+ *      descriptRapide
+ *      description
+ *      stock
+ *      prix
+ *      ref
+ *      categorie
  * 
  * 
  * probleme rencontré:
@@ -16,8 +16,11 @@
  */
 
 
-// fonction qui permet d'écrire dans un fichier log (ajoutProduit_post.log)
-// utilisé pour logger les requêtes
+/**
+ * [log_ajoutProduit permet d'écrire un texte de log dans un fichier]
+ * @param  [string] $value [text a écrire dans le log]
+ * @return []        []
+ */
 function log_ajoutProduit($value) {
   file_put_contents("log\ajoutProduit_post.log",
                     print_r($value."\n",true),
@@ -29,7 +32,7 @@ function log_ajoutProduit($value) {
 var_dump($_POST);
 
 $nomProduit     = $_POST['nomProduit'];
-$descriptRapide	= $_POST['descriptRapide'];
+$descriptRapide = $_POST['descriptRapide'];
 $description    = $_POST['description'];
 $stock          = $_POST['stock'];
 $prix           = $_POST['prix'];
@@ -38,22 +41,22 @@ $categorie      = $_POST['cat'];
 
 $Bdd = new PDO("mysql:host=localhost;dbname=boutik", "root", "");
 
-$requete =
+$req =
 " INSERT INTO produit"
 . " (nom, descript_rap, descript, stock, prix, ref, cat_id)"
 . " VALUES"
 . " ('".$nomProduit.      "'"
 . " ,'".$descriptRapide.  "'"
-. " ,'".$description.  		"'"
+. " ,'".$description.   "'"
 . " , ".$stock.           ""
 . " , ".$prix.            ""
 . " ,'".$ref.             "'"
-. " , ".$categorie.    		" );";
+. " , ".$categorie.         " );";
 
 
-log_ajoutProduit("requete: ".$requete);
-$etat = $Bdd->query($requete);
-log_ajoutProduit("etat: ".get_object_vars($etat));
+log_ajoutProduit("requete: ".$req);
+$sql = $Bdd->query($req);
+log_ajoutProduit("etat: ".get_object_vars($sql));
 
 header('Location: ajoutProduit.php');
 exit();

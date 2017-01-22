@@ -5,7 +5,7 @@
 
 
 <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">-->
   <!--  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">-->
 
   <!-- Website CSS style -->
@@ -13,6 +13,7 @@
 
   <!-- front login récupéré sur http://bootsnipp.com/snippets/featured/register-page -->
 
+  <?php include_once('include_php.php'); ?>
   <?php include('inc/header.inc.php'); ?>
 
   <title>La Boutik - connexion au compte</title>
@@ -32,8 +33,12 @@
         <!-- Formulaire -->
 
         <form class="form-horizontal" method="post" action="inscription_post.php">
-
-
+      
+        <!-- affichage des messages d'erreur d'inscription
+              fonction de 'include_php.php' -->
+        <div class="message_erreur"><p>
+          <?php msg_erreur(); ?>
+        </p></div>
           <!-- Nom -->
 
           <div class="form-group">

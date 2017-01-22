@@ -103,3 +103,181 @@ tentative de nouvelle connexion:
   récupération id client: 1
   comparaison mdp: 1234 - 1234
   mdp OK
+
+=================tentative de nouvelle connexion:  22/01/2017 - 03:35:30pm  email: 3@3.com  mdp:   9
+=================tentative de nouvelle connexion:  22/01/2017 - 03:41:48pm  email: 3@3.com  mdp:   9
+=================tentative de nouvelle connexion:  22/01/2017 - 03:41:55pm  email: 3@3.com  mdp:   9
+=================tentative de nouvelle connexion:  22/01/2017 - 03:43:15pm  email: 3@3.com  mdp:   7
+=================tentative de nouvelle connexion:  22/01/2017 - 03:48:34pm  email: 3@3.com  mdp:   7
+=================tentative de nouvelle connexion:  22/01/2017 - 03:49:15pm  email: 3@3.com  mdp:   7
+=================tentative de nouvelle connexion:  22/01/2017 - 03:49:28pm  email: 3@3.com  mdp:   7  demande à la base si compte existant  compte existant OK
+=================tentative de nouvelle connexion:  22/01/2017 - 03:49:47pm  email: 3@3.com  mdp:   7  demande à la base si compte existant  compte existant OK
+=================tentative de nouvelle connexion:  22/01/2017 - 03:57:20pm  email: 3@3.com  mdp:   7  demande à la base si compte existant  compte existant OK  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 7 - 4mdp différents - exit connexion
+=================tentative de nouvelle connexion:  22/01/2017 - 03:57:25pm  email: 3@3.com  mdp:   7  demande à la base si compte existant  compte existant OK  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 7 - 4mdp différents - exit connexion
+=================tentative de nouvelle connexion:  22/01/2017 - 03:57:48pm  email: 3@3.com  mdp:   4  demande à la base si compte existant  compte existant OK  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4  mdp OK
+=================tentative de nouvelle connexion:  22/01/2017 - 03:58:13pm  email: 3@3.com  mdp:   7  demande à la base si compte existant  compte existant OK  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 7 - 4mdp différents - exit connexion
+=================tentative de nouvelle connexion:  22/01/2017 - 03:58:19pm  email: 3@3.com  mdp:   4  demande à la base si compte existant  compte existant OK  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4  mdp OK
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:05:48pm
+  email: 9@9.com
+  mdp:   7
+  demande à la base si compte existantcompte non existant. exit connexion
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:06:42pm
+  email: 3@3.com
+  mdp:   7
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 7 - 4
+mdp différents - exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:09:53pm
+  email: 9@9.com
+  mdp:   7
+
+  demande à la base si compte existant
+compte non existant. exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:10:40pm
+  email: 3@3.com
+  mdp:   4
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:12:13pm
+  email: 3@3.com
+  mdp:   7
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 7 - 4
+mdp différents - exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:12:22pm
+  email: 9@9.com
+  mdp:   10
+
+  demande à la base si compte existant
+compte non existant. exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:12:33pm
+  email: 3@3.com
+  mdp:   5
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 5 - 4
+mdp différents - exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:12:44pm
+  email: 3@3.com
+  mdp:   4
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:14:45pm
+  email: 9@9.com
+  mdp:   7
+
+  demande à la base si compte existant
+compte non existant. exit connexion
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:21:07pm
+  email: 3@3.com
+  mdp:   4
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:33:00pm
+  email: 3@3.com
+  mdp:   4
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 4  récupération id client: 4  comparaison mdp: 4 - 4
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:33:36pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:38:00pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:39:11pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:45:33pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
+
+=================
+tentative de nouvelle connexion:
+  22/01/2017 - 04:46:02pm
+  email: 11@11.com
+  mdp:   11
+
+  demande à la base si compte existant
+  compte existant OK
+  récupération du mdp dans la BDD: 11  récupération id client: 5  comparaison mdp: 11 - 11
+  mdp OK
